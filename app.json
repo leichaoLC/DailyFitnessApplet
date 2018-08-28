@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/plan/plan",
+    "pages/all/all"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "每日运动",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "运动",
+        "iconPath": "pages/img/11.png",
+        "selectedIconPath": "pages/img/1.png"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "text": "计划",
+        "iconPath": "pages/img/22.png",
+        "selectedIconPath": "pages/img/2.png"
+      },
+      {
+        "pagePath": "pages/all/all",
+        "text": "所有课程",
+        "iconPath": "pages/img/33.png",
+        "selectedIconPath": "pages/img/3.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "pages/img/44.png",
+        "selectedIconPath": "pages/img/4.png"
+      }
+    ]
+  }
+}
