@@ -1,1 +1,4 @@
-<text>pages/plan/index.wxml</text>
+<view id='main'>
+<text>今日步数：{{stepnumber[30].step}}</text>
+<text>\n{{stepnumber[30].time}}</text>
+</view>

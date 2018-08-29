@@ -1,0 +1,11 @@
+page{
+  display: flex;
+  justify-content: center
+}
+#main{
+text-align: center;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background-color: 
+}
