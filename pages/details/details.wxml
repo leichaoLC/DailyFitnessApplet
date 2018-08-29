@@ -1,0 +1,9 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view>
+<view class='titlle'>{{course.name}}</view>
+<view class='fenglei'><text>器材：{{course.equipment}}</text>|<text>目的：{{course.effect}}</text>|<text>锻炼部位：{{course.position}}</text></view>
+ 
+<view class='box'>
+ <template id="info" is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+</view>
