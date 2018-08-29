@@ -4,7 +4,20 @@ App({
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function () {
-    
+    wx.login({
+      success:function(res){
+        if(res.code){
+          wx.request({
+            url: '  ',
+            data:{
+              code:res.code
+            }
+          })
+        }else{
+          console.log('登录失败'+res.errMsg)
+        }
+      }
+    })
   },
   
   /**

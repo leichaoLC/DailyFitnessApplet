@@ -1,0 +1,24 @@
+/* page{
+  background-color: #000
+} */
+
+.one{
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%; 
+  border: 10rpx solid rgb(100, 100, 100);
+  margin: 20rpx auto;
+}
+
+.username{
+  text-align: center;
+  margin: 20rpx 0
+}
+
+.name{
+  /* color: #fff */
+  font-size: 35rpx;
+  /* text-align: center */
+}

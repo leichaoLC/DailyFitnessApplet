@@ -1,1 +1,6 @@
-<text>pages/plan/index.wxml</text>
+<view>
+  <open-data type="userAvatarUrl" class="one"></open-data>
+  <view class='username'><open-data type="userNickName" class="name"></open-data></view>
+  <view class='username'><open-data type="userGender" class="name"></open-data></view>
+   <button open-type="getUserInfo">111</button>
+</view>
