@@ -5,13 +5,89 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+  all:[],
+  // qc:[],
+  // bw:[],
+  md:[]
   },
-
+  details:function(e){
+    wx.navigateTo({
+      url: '/pages/details/details?cid='+e.currentTarget.dataset.id
+    })
+  },
+  // qcclass:function(e){
+  //   var that = this
+  //   wx.request({
+  //     url: 'http://starry:81/applet/?qcname=' + e.currentTarget.dataset.id, 
+  //     data: {
+  //     },
+  //     method: 'get',
+  //     header: {
+  //       'content-type': 'application/json'
+  //     },
+  //     success: function (res) {
+  //       that.setData({
+  //         all: res.data.r,
+  //       })
+  //     }
+  //   })
+  // },
+  // bwclass: function (e) {
+  //   var that = this
+  //   wx.request({
+  //     url: 'http://starry:81/applet/?bwname=' + e.currentTarget.dataset.id,
+  //     data: {
+  //     },
+  //     method: 'get',
+  //     header: {
+  //       'content-type': 'application/json'
+  //     },
+  //     success: function (res) {
+  //       that.setData({
+  //         all: res.data.r,
+  //       })
+  //     }
+  //   })
+  // },
+  mdclass: function (e) {
+    var that = this
+    wx.request({
+      url: 'http://starry:81/applet/?mdname=' + e.currentTarget.dataset.id,
+      data: {
+      },
+      method: 'get',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        that.setData({
+          all: res.data.r,
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this
+    wx.request({
+      url: 'http://starry:81/applet', 
+      data: {
+      },
+      method:'get',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        that.setData({
+          all:res.data.r,
+          // qc:res.data.qclist,
+          // bw:res.data.bwlist,
+          md:res.data.mdlist,
+        }) 
+      }
+    })
   
   },
 

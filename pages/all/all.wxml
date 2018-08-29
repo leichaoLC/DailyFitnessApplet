@@ -1,2 +1,24 @@
-<!--pages/all/all.wxml-->
-<text>pages/all/all.wxml</text>
+<!-- 所有课程页面 -->
+<!-- <view>器材：<text class='classf' bindtap='qcclass' wx:for="{{qc}}" data-id="{{item.name}}">{{item.name}}</text></view>
+<view>部位：<text class='classf' bindtap='bwclass' data-id="{{item.pname}}" wx:for="{{bw}}">{{item.pname}}</text></view> -->
+<scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+  <block wx:for="{{md}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+    <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{item.ename}}</view>
+  </block>
+</scroll-view>
+<view>目的：
+  <text class='classf' bindtap='mdclass' data-id="{{item.ename}}" wx:for="{{md}}">{{item.ename}}</text>
+</view>
+<view wx:for="{{all}}">
+  <view bindtap="details" data-id="{{item.cid}}" class='card'>
+    <image style="width: 100%;height:200px" src="{{item.imgpath}}"></image>
+    <view>
+      <text>{{item.name}}</text>
+      <view class='text'>
+        <text>{{item.equipment}}|</text>
+        <text>{{item.effect}}|</text>
+        <text>{{item.position}}</text>
+      </view>
+    </view>
+  </view>
+</view>
