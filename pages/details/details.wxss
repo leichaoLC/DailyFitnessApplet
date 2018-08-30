@@ -1,17 +1,25 @@
 @import "../../wxParse/wxParse.wxss";
+
 .titlle{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 50rpx;
+  color: rgb( 255, 255, 255)
 }
 .fenglei{
   text-align: center;
-  font-size:16px;
-  margin-top: 15px
+  font-size:30rpx;
+  margin-top: 20rpx;
 }
+
 .fenglei text{
-  margin-left: 7px;
-  margin-right: 7px
+    margin: 0 15rpx;
 }
+
 #info{
-  font-size: 18px
+  font-size: 30rpx
+}
+
+#info a{
+  text-decoration: none;
+  color: rgb(0, 0, 0)
 }

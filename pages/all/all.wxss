@@ -1,17 +1,32 @@
+page{
+  background-color: rgb(0, 0, 0)
+}
+
 .card {
-  width: 45%;
-  float: left;
-  margin-left: 12px;
+  /* width: 40%; */
+  /* float: left; */
+  width: 300rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  display: inline-block;
   text-align: center;
-  margin-top: 10px;
+  background-color: rgb(100, 100, 100);
+  padding: 20rpx;
+  color: rgb(255, 255, 255);
+  border-radius: 10rpx
+}
+
+.show{
+  display: inline-block;
+
+}
+
+.title{
+  font-size: 30rpx
 }
 
 .text {
-  font-size: 14px;
-}
-
-.classf {
-  margin-right: 7px;
+  font-size: 24rpx;
 }
 
 /**index.wxss**/

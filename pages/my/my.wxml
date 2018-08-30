@@ -1,2 +1,17 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view>
+  <view>
+    <open-data type="userAvatarUrl" class="header"></open-data>
+  </view>
+  <view class='particulars one' animation="{{animationData1}}">用户昵称：\t
+    <open-data type="userNickName"></open-data>
+  </view>
+  <view class='particulars' animation="{{animationData2}}">用户性别:\t
+    <open-data type="userGender" lang="zh_CN"></open-data>
+  </view>
+  <view class='particulars' animation="{{animationData3}}">用户所在城市:\t
+    <open-data type="userCity" lang="zh_CN"></open-data>
+  </view>
+  <view class='particulars' animation="{{animationData4}}">用户所在省份:\t
+    <open-data type="userProvince" lang="zh_CN"></open-data>
+  </view>
+</view>

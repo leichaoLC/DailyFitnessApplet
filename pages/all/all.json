@@ -1,6 +1,6 @@
- {
-   "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "所有课程",
-    "navigationBarTextStyle": "black"
-    }
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "课程分类",
+  "navigationBarTextStyle": "rgb(255,255,255,255)"
+}

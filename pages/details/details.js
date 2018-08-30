@@ -15,7 +15,7 @@ Page({
     var that=this
     console.log(options.cid)
     wx.request({
-      url: 'http://starry:81/applet/details?cid='+options.cid, 
+      url: 'http://starsky:81/applet/details?cid='+options.cid, 
       data: {
       },
       method: 'get',

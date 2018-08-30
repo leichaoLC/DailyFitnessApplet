@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/my/my",
-    "pages/plan/plan",
     "pages/all/all",
     "pages/details/details"
   ],
@@ -19,12 +18,6 @@
         "text": "运动",
         "iconPath": "pages/img/11.png",
         "selectedIconPath": "pages/img/1.png"
-      },
-      {
-        "pagePath": "pages/plan/plan",
-        "text": "计划",
-        "iconPath": "pages/img/22.png",
-        "selectedIconPath": "pages/img/2.png"
       },
       {
         "pagePath": "pages/all/all",

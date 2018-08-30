@@ -1,9 +1,4 @@
 <view id='main'>
 <text>今日步数：{{stepnumber[30].step}}</text>
 <text>\n{{stepnumber[30].time}}</text>
-<view>
-  <open-data type="userAvatarUrl" class="one"></open-data>
-  <view class='username'><open-data type="userNickName" class="name"></open-data></view>
-  <view class='username'><open-data type="userGender" class="name"></open-data></view>
-   <button open-type="getUserInfo">111</button>
 </view>
